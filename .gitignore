@@ -1,0 +1,17 @@
+# Visual Studio / build output
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+packages/
+
+# LocalDB transaction log (recreated automatically)
+*_log.ldf
+*.ldf
+
+# Databases contain real user data - kept local only
+*.mdf
+App_Data/
+App_data/
+

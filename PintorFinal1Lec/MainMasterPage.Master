@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.master.cs" Inherits="PintorFinal1Lec.MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="assets/cash/images/style.css" rel="stylesheet">
+    <style type="text/css">
+        .auto-style1 {
+            font-size: 36px;
+            font-weight: bold;
+            font-style: normal;
+            font-variant: normal;
+            line-height: normal;
+            font-family: Tahoma, sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <div id="page" align="center">
+	<div id="toppage" align="center">
+		<div id="date">
+			<div class="smalltext" style="padding:13px;"><strong>April 21, 2007</strong></div>
+		</div>
+		<div id="topbar">
+			<div align="right" style="padding:12px;" class="smallwhitetext"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a></div>
+		</div>
+	</div>
+	<div id="header" align="center">
+		<div class="titletext" id="logo">
+			<div class="logotext" style="margin:30px">Lo<span class="orangelogotext">A</span><span class="auto-style1">n</span></div> 
+		</div>
+		<div id="pagetitle">
+			<div id="title" class="titletext" align="right">Loan Systems Application</div>
+		</div>
+	</div>
+	<div id="content" align="center">
+		<div id="menu" align="right">
+			<div id="linksmenu" align="center">
+				<a href="Default.aspx" title="Home">Home</a>
+				<a href="Registration.aspx" title="Registration">Registration</a>
+				<a href="Login.aspx" title="Registration">Login</a>
+				
+			</div>
+		</div>
+        <div id="contenttext">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+	</div>
+	<div id="footer" class="smallgraytext" align="center">
+		<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a><br />
+		Your Company Name &copy; 2007<br />
+		<a href="http://www.winkhosting.com" title="Hosting Colombia">Hosting Colombia</a><br />
+	</div>
+</div>
+    </form>
+</body>
+</html>
